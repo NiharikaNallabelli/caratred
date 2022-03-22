@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: ezycontracts
+  name: ezycontracts
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ezycontracts
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ezycontracts
+    spec:
+      containers:
+      - image: {{.Values.ezycontracts.tag}}
+        name: ezycontracts
+        resources: {}
+status: {}
