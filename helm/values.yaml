@@ -1,0 +1,9 @@
+ezycontracts:
+  tag: registry.caratred.in:v0.0.1
+mariadb:
+  tag: mariadb:0.8.2-rc-focal
+  dbuser: "frappe"
+  dbpassword: "frappe"
+  dbname: "frappe"
+redis:
+  tag: redis:latest  
